@@ -1,0 +1,10 @@
+puntcost.cpp: In function ‘int main()’:
+puntcost.cpp:20:4: error: assignment of read-only variable ‘p’
+   20 |  p = &j;
+      |  ~~^~~~
+puntcost.cpp:22:13: error: uninitialized ‘const q’ [-fpermissive]
+   22 |  int *const q;
+      |             ^
+puntcost.cpp:23:4: error: assignment of read-only variable ‘q’
+   23 |  q = p;
+      |  ~~^~~
