@@ -1,0 +1,7 @@
+res_rif_err.cpp: In function ‘int& f()’:
+res_rif_err.cpp:11:9: warning: reference to local variable ‘i’ returned [-Wreturn-local-addr]
+   11 |  return i;
+      |         ^
+res_rif_err.cpp:6:6: note: declared here
+    6 |  int i = 0;
+      |      ^

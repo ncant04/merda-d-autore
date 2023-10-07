@@ -1,0 +1,4 @@
+asgmnt.cpp: In function ‘int main()’:
+asgmnt.cpp:25:8: error: lvalue required as left operand of assignment
+   25 |  k = j + 1 = 2 * (i = 100); // Errore!
+      |      ~~^~~

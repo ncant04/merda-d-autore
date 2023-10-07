@@ -1,0 +1,4 @@
+formali.cpp: In function ‘int f(const int&)’:
+formali.cpp:12:4: error: assignment of read-only reference ‘n’
+   12 |  n += 10; // Errore!
+      |  ~~^~~~~
