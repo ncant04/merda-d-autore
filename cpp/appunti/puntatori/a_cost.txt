@@ -1,9 +1,0 @@
-a_cost.cpp: In function ‘int main()’:
-a_cost.cpp:18:5: error: assignment of read-only location ‘* p’
-   18 |  *p = 1;
-      |  ~~~^~~
-a_cost.cpp:26:7: error: invalid conversion from ‘const int*’ to ‘int*’ [-fpermissive]
-   26 |  qq = &k;
-      |       ^~
-      |       |
-      |       const int*
