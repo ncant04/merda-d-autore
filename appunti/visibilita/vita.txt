@@ -1,0 +1,16 @@
+TEMPI DI VITA
+
+Ve ne sono tre tipi.
+
+Statico:
+	la variabile nasce prima che il programma parta (prima che si entra nel
+	punto d'ingresso) e "muore" dopo che quest'ultima cessa di esistere
+	(variabili globali e locali statiche).
+
+Automatico:
+	è quello delle variabili locali. Queste infatti nascono quando si entra
+	in un blocco e cessano di esistere quando si esce da quest'ultimo.
+
+Dinamico:
+	la variabile nasce con l'istruzione new, e "muore" con l'istruzione
+	delete (allocazione dinamica).

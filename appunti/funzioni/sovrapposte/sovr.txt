@@ -1,0 +1,6 @@
+sovr.cpp:16:5: error: ambiguating new declaration of ‘int max(double, double)’
+   16 | int max(double a, double b)
+      |     ^~~
+sovr.cpp:11:8: note: old declaration ‘double max(double, double)’
+   11 | double max(double a, double b)
+      |        ^~~

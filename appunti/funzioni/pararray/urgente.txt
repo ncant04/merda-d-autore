@@ -1,0 +1,7 @@
+Nel caso dei parametri formali, quando si trasmette un array, si trasmette solo
+l'indirizzo del suo primo elemento. Se si trasmette il primo indirizzo
+dell'array, quando si opera sull'array, le modifiche vengono apportate
+sull'originale (array chiamante).
+
+Gli array sono un eccezione del linguaggio C++ in merito al passaggio di
+parametri. Per gli altri tipi di variabili, si crea una copia.

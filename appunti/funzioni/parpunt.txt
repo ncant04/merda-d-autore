@@ -1,0 +1,45 @@
+Tratto dal K&R C
+
+5.2 Puntatori e argomenti delle funzioni
+
+Dal momento che nel C gli argomenti sono passati alle funzioni per valore,
+per la funzione chiamata non esiste un modo diretto di alterare una variabile
+della funzione chiamante. Un algoritmo di ordinamento, per esempio, potrebbe
+dover scambiare due elementi fuori posto tramite una funzione di nome swap. Non
+è sufficiente scrivere
+
+	swap(a, b);
+
+Dove la funzione swap è definita come
+
+	void swap(int x, int y)	/* ERRATO */
+	{
+		int temp;
+
+		temp = x;
+		x = y;
+		y = temp;
+	}
+
+A causa del passaggio dei parametri per valore, swap non è in grado di agire
+sugli argomenti a e b nella funzione da cui è stata chiamata. Il codice appena
+riportato scambia semplicemente delle copie di a e b.
+	Per ottenere l'effetto desiderato, il chiamante deve passare i puntatori
+ai valori da cambiare:
+
+	swap(&a, &b);
+
+Dato che l'operatore & genera l'indirizzo di una variabile, &a è un puntatore
+ad a. La funzione swap deve dichiarare che i parametri sono puntatori: l'accesso
+agli operandi avverrà indirettamente tramite essi.
+
+	void swap(int *px, int *py)	/* scambia *px e *py */
+	{
+		int temp;
+
+		temp = *px;
+		*px = *py;
+		*py = temp;
+	}
+
+[...]

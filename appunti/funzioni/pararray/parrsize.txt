@@ -1,0 +1,16 @@
+parrsize.cpp: In function ‘void scrivi(const int*)’:
+parrsize.cpp:9:23: warning: ‘sizeof’ on array function parameter ‘v’ will return size of ‘const int*’ [-Wsizeof-array-argument]
+    9 |  const int n = sizeof v / sizeof(int);
+      |                       ^
+parrsize.cpp:7:23: note: declared here
+    7 | void scrivi(const int v[])
+      |             ~~~~~~~~~~^~~
+
+
+void scrivi(const int v[]) {
+	const int v = sizeof v / sizeof(int);	// Errore! 1
+	[...]
+
+v non è un elemento! è un indirizzo! Gli indirizzi hanno valore intero!
+v è la dimensione di un puntatore. non di un vettore.
+Qualunque cosa punti un puntatore, quest'ultimo è delle stesse dimensioni.

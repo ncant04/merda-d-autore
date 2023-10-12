@@ -1,0 +1,1 @@
+Avere un riferimento array costante permette di trasmettere un array costante.

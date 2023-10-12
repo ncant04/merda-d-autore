@@ -1,0 +1,6 @@
+default.cpp:18:8: error: redefinition of ‘double perimetro(int, double)’
+   18 | double perimetro(int nLati = 3, double lunghezzaLato) // Errore!
+      |        ^~~~~~~~~
+default.cpp:9:8: note: ‘double perimetro(int, double)’ previously defined here
+    9 | double perimetro(int nLati = 3, double lunghezzaLato = 1.0)
+      |        ^~~~~~~~~

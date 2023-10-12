@@ -1,0 +1,16 @@
+puntstr.cpp: In function ‘int main()’:
+puntstr.cpp:11:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   11 |  char* s3 = "ieri";
+      |             ^~~~~~
+puntstr.cpp:12:13: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   12 |  char* s4 = "domani";
+      |             ^~~~~~~~
+puntstr.cpp:16:5: error: incompatible types in assignment of ‘char*’ to ‘char [4]’
+   16 |  s2 = s3;
+      |  ~~~^~~~
+puntstr.cpp:22:7: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   22 |  s4 = "Lorem ipsum";
+      |       ^~~~~~~~~~~~~
+
+Non sono responsabile per quei warning.
+Lopriore ci ha detto che si poteva fare in quel modo. -ncant

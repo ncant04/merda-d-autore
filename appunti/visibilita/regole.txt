@@ -1,0 +1,13 @@
+Regole di visibilità
+====================
+
+1) Un identificatore non può essere usato prima di essere stato dichiarato
+   (nell'ordine testuale).
+
+2) Un identificatore dichiarato in un blocco è visibile solo in quel blocco e
+   in tutti i blocchi in esso contenuti.
+
+3) Un identificatore globale (dichiarato dunque all'infuori di un gruppo) è
+   visibile dappertutto dal punto di dichiarazione in poi (vedi regola n. 1).
+
+4) In caso di una doppia dichiarazione, è visibile quella interna

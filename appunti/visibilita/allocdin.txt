@@ -1,0 +1,7 @@
+new
+
+1. Cerca nell'heap una porzione libera di dimensioni sufficienti.
+2. La segna come occupata.
+3. Ne ritorna l'indirizzo.
+
+"delete" non cambia il puntatore.
